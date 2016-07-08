@@ -1,9 +1,14 @@
+# -*- coding: utf-8 -*-
+"""
+__title__ = 'rec_sys recommendation: For the give rating matrix, recommendation top-3 items for each user. Using 5 neighbors'
+__author__ = 'ruTing'
+__mtime__ = '16-7-4'
+__email__ = 'ruddding@163.com'
+
+"""
 import pandas as pd
 import numpy as np
-import matplotlib.pylab as plt
-import datetime
 import copy
-import csv
 
 data = pd.read_csv('rating_matrix.csv')
 name = pd.read_csv('name.csv', index_col='name')
